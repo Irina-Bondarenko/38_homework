@@ -55,7 +55,7 @@ function controller(view, model, payload) {
 
   const loadHandler = () => {
     const todoItems = model.getData();
-    // if (!todoItems) return;
+    if (!todoItems) return;
 
     let itr = todoItems[Symbol.iterator]();
 
